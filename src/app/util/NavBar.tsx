@@ -1,5 +1,6 @@
 import React from "react";
 import NavBarLinks from "./NavBarLinks";
+import { FaGithub , FaLinkedin } from "react-icons/fa";
 
 const NavBar = () => {
 
@@ -35,12 +36,15 @@ const NavBar = () => {
         <a className="btn btn-ghost text-xl">Protfolie</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 bg-neutral-800 rounded-2xl px-5 py-0">
                <NavBarLinks/>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+          <div className=" flex flex-row gap-2">
+              <FaGithub className="text-2xl"/>
+              <FaLinkedin className="text-2xl"/>
+          </div>
       </div>
     </div>
   );

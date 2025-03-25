@@ -28,8 +28,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <main className=" relative h-full lg:h-screen md:h-screen " style={{
+        background:
+          "linear-gradient(0deg, rgba(25,6,240,1) 2%, rgba(25,20,71,1) 50%, rgba(13,9,1,1) 79%)",
+      }}>
         <NavBar/>
         {children}
+
+        </main>
+        
       </body>
     </html>
   );

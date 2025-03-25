@@ -1,9 +1,14 @@
-import React from 'react'
+"use client"
+import React from "react";
 
+import Hero from "../component/Hero";
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div>
+      <Hero/>
+      
+    </div>
+  );
+};
 
-export default page
+export default page;
