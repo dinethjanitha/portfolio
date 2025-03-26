@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import techRing from "./../../../public/images/tech-rings.svg";
 import Image from "next/image";
 import myImage from "./../../../public/images/myimage.jpg";
+import wavinghand from "./../../../public/images/waving-hand.1da6fc7a.gif";
 
 const Hero = () => {
+
+  const [hoverYValue , setHoverYValue] = useState(0);
+
   return (
-    <div className="p-5">
+    <div className="p-5 relative" style={{
+      background:
+        "linear-gradient(0deg, rgba(25,6,240,1) 2%, rgba(25,20,71,1) 50%, rgba(13,9,1,1) 79%)",
+    }}>
       <div className=" grid sm:grid-cols-1  md:grid-cols-10 md:mx-15 ">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -18,6 +25,7 @@ const Hero = () => {
         >
           <div>
             <motion.div>
+            <Image src={wavinghand} width={40} className="mb-3"  alt="" />
               <TypeAnimation
                 sequence={[
                   "Full Stack Developer",
@@ -31,36 +39,65 @@ const Hero = () => {
                 className="text-5xl font-bold"
               />
             </motion.div>
-            <h1 className="text-8xl font-bold">Hi, I am</h1>
+            
+            <h1 className="text-8xl flex font-bold">Hi,I am</h1>
+            <h1 className="text-8xl font-bold"></h1>
             <h1 className=" text-7xl font-bold ">Dineth Janitha</h1>
+            
+            <div>
+              <motion.div
+               animate = {{x:[ 0 , 100, 0 , 200 , 0] , y : [200,300,100,0, 0]}}
+              //  transition={{ease : "anticipate" , duration: 2}}
+               className=" btn btn-active">Download CV</motion.div>
+            </div>
+
           </div>
         </motion.div>
         <div className=" md:col-span-4 sm:order-1 flex justify-center items-center">
           <motion.div
-            whileHover={{ scale: 1, y: -10, x: -5 }}
+            onMouseMove={(e) => {
+              const ract = e.currentTarget.getBoundingClientRect();
+              console.log(ract);
+              const hoverY = e.clientY - ract.y;
+              const halfHeight =  ract.height / 2;
+
+              if(hoverY > halfHeight){
+                  setHoverYValue(-10);
+              }else{
+                setHoverYValue(10);
+              }
+            }}
+            whileHover={{ scale: 1, y: hoverYValue }}
             transition={{ type: "spring", stiffness: 50 }}
             className=" relative"
           >
-            <div className="avatar absolute top-27 left-23 lg:top-19 md:top-14 lg:left-14 md:left-10.5">
-              <div className="md:w-47 w-50 lg:w-66 rounded-full">
-                <Image
-                  className="shadow-2xl"
-                  width={400}
-                  height={400}
-                  alt=""
-                  src={myImage}
-                />
+            <div className="relative justify-center items-center ">
+              <div className="avatar absolute  top-19  left-14 ">
+                <div className="w-66 rounded-full">
+                  <Image
+                    className="shadow-2xl"
+                    width={400}
+                    height={400}
+                    alt=""
+                    src={myImage}
+                  />
+                </div>
               </div>
-            </div>
 
-            <Image
-              src={techRing}
-              alt=""
-              className=" min-w-[10px] max-w-[401px]"
-            />
+              <Image
+                src={techRing}
+                alt=""
+                className=" min-w-[10px] max-w-[401px]"
+              />
+            </div>
           </motion.div>
+
+      
         </div>
+        
       </div>
+
+      
       {/* <motion.div
         whileHover={{ scale: 1, y: -10 }}
         transition={{ type: "spring", stiffness: 50 }}
