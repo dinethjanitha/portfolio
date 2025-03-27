@@ -1,9 +1,100 @@
-import React from 'react'
+import React from "react";
 
-const page = () => {
+const Resume = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div
+      className=" h-screen"
+      style={{
+        background:
+          "linear-gradient(0deg, rgba(25,6,240,1) 2%, rgba(25,20,71,1) 50%, rgba(13,9,1,1) 79%)",
+      }}
+    >
+      <div className=" w-[1200px] mx-auto">
+        <h1 className=" text-5xl text-center pt-6">My Resume</h1>
 
-export default page
+        {/* <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore non
+          eos accusamus, blanditiis totam incidunt quo magni fugiat amet quaerat
+          dolores nostrum unde repudiandae optio, voluptate minus mollitia.
+          Fugiat, eos!
+        </p> */}
+        <h2 className="  text-4xl mt-5">Education</h2>
+        {/* <ul className=" w-80 mt-5">
+          <li className=" relative flex mb-2 gap-4  overflow-clip">
+            <div className=" before:absolute  before:left-[10px] before:rounded-4xl before:top-[26px] before:h-full  before:w-[3px]  before:bg-gray-400 ">
+              <svg
+                height="24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+                className=""
+              >
+                <circle r="12" cx="12" cy="12" />
+              </svg>
+            </div>
+
+            <div className=" text-sm  ">
+              <p className="text-xl italic font-bold ">2023</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem,
+                ut modi nihil sed amet suscipit, nam dignissimos, porro deserunt
+                mollitia veniam soluta. Atque ab eius neque repudiandae, facere
+                amet corrupti?
+              </p>
+            </div>
+          </li>
+        </ul> */}
+
+        <div className="w-80 mt-5">
+          <div className="flex flex-row gap-4">
+            <div className="w-[24px] flex flex-col justify-center items-center  ">
+              <div className=" flex-none">
+                <svg
+                  height="24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className=""
+                >
+                  <circle r="12" cx="12" cy="12" fill="white" />
+                </svg>
+              </div>
+
+              <div className=" bg-amber-300 grow w-1 mt-1 rounded-2xl "></div>
+            </div>
+            <div className=" relative">
+              <p className=" text-2xl top-[-2000px]">2003</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus sequi quis eligendi officia aut inventore nulla sed, et tempore quas, autem modi placeat cumque vel assumenda debitis. Reiciendis, quod adipisci?</p>
+              <p className="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus sequi quis eligendi officia aut inventore nulla sed, et tempore quas, autem modi placeat cumque vel assumenda debitis. Reiciendis, quod adipisci?</p>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="w-80 mt-1 relative">
+          <div className="flex flex-col justify-start items-start ">
+                <div className=" flex flex-row flex-none gap-1">
+                  <svg
+                    height="24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className=""
+                  >
+                    <circle r="12" cx="12" cy="12" />
+                  </svg>
+
+                  <p className=" text-xl">2003</p>
+                </div>
+
+                <div className=" flex flex-row absolute left-3 top-7 gap-3">
+                  <div className=" bg-amber-300 grow w-4 mt-1 rounded-2xl "></div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus sequi quis eligendi officia aut inventore nulla sed, et tempore quas, autem modi placeat cumque vel assumenda debitis. Reiciendis, quod adipisci?</p>
+
+                </div>
+              </div>
+        </div> */}
+      </div>
+
+      
+    </div>
+  );
+};
+
+export default Resume;
