@@ -3,7 +3,7 @@ import Hero from "./component/Hero";
 
 export default function Home() {
   return (
-        <div>
+        <div className=" h-screen">
           <Hero/>
         </div>
   );
