@@ -1,0 +1,29 @@
+.shiny-bg {
+    background: rgba(25, 6, 240, 1); /* Base deep blue color */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* The subtle shine effect */
+  .shiny-bg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(25, 6, 240, 0) 50%);
+    mix-blend-mode: overlay; /* Gives a soft mask-like shine */
+    pointer-events: none;
+    animation: fadeShine 3s infinite alternate ease-in-out;
+  }
+  
+  /* Optional gentle animation */
+  @keyframes fadeShine {
+    0% { opacity: 0.2; transform: scale(1); }
+    100% { opacity: 0.4; transform: scale(1.1); }
+  }
+  
