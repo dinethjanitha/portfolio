@@ -32,6 +32,7 @@ const AboutMe = () => {
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-10  mt-5">
             <div>
               <h2 className=" text-2xl font-bold text-black flex flex-none gap-3"><IoLanguageSharp />Languages</h2>
+              <div className="w-12 py-2 bg-amber-300"></div>
               <div className="ml-5">
                 <h2>English</h2>
                 <h2>Sinhala</h2>
