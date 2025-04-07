@@ -7,18 +7,26 @@ import myPhoto from "./../../../public/images/myphoto.jpg";
 import wavinghand from "./../../../public/images/waving-hand.1da6fc7a.gif";
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { FaHashnode } from "react-icons/fa6";
+import "./timeline.module.css";
+import ShineEffect from "./ShineEffect";
+import BackGroundEffect from "./BackGroundEffect";
+// import myCv from "./../../../public/cv/myCv.pdf"
 
 const Hero = () => {
   const [hoverYValue, setHoverYValue] = useState(0);
 
   return (
-    <div
-      className="p-5 relative "
-      style={{
-        background:
-          "linear-gradient(0deg, rgba(25,6,240,1) 2%, rgba(25,20,71,1) 50%, rgba(13,9,1,1) 79%)",
-      }}
-    >
+    <div className="p-5 relative" >
+      <BackGroundEffect />
+
+      {/* <ShineEffect top={50} left={60} /> */}
+      {/* <ShineEffect top={100} left={60} /> */}
+      {/* <ShineEffect top={50} left={70} /> */}
+      {/* <ShineEffect top={0} left={10} /> */}
+      {/* <ShineEffect top={20} left={20} /> */}
+      {/* <ShineEffect top={50} left={22} /> */}
+      <ShineEffect top={90} left={50} />
+      {/* <ShineEffect top={85} left={5} /> */}
       <div className=" grid sm:grid-cols-1  md:grid-cols-10 md:mx-15 ">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -40,7 +48,7 @@ const Hero = () => {
                 ]}
                 speed={50}
                 repeat={Infinity}
-                className="text-5xl font-bold"
+                className="text-5xl font-bold relative z-0"
               />
             </motion.div>
 
@@ -54,7 +62,8 @@ const Hero = () => {
                 //  transition={{ease : "anticipate" , duration: 2}}
                 className=" btn btn-active mt-5 animate-bounce rounded-2xl"
               >
-                Download CV
+                <a href="/cv/DinethJanithaCV.pdf" download>Download CV</a>
+                
               </motion.div>
             </div>
           </div>
@@ -100,30 +109,38 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" flex justify-center gap-5 text-3xl m-3 ">
+      <div className=" flex justify-center gap-5 text-3xl m-3 mt-10 ">
         <motion.div
           whileHover={{ y: -10 }}
           transition={{ type: "spring", stiffness: 100 }}
         >
-          <FaLinkedin />
+          <a href="https://linkedin.com/in/dinethjanitha" target="_blank">
+            <FaLinkedin />
+          </a>
         </motion.div>
         <motion.div
           whileHover={{ y: -10 }}
           transition={{ type: "spring", stiffness: 100 }}
         >
-          <FaGithub />
+           <a href="https://github.com/dinethjanitha" target="_blank"> 
+            <FaGithub />
+          </a>
         </motion.div>
         <motion.div
           whileHover={{ y: -10 }}
           transition={{ type: "spring", stiffness: 100 }}
         >
-          <FaFacebook />
+           <a href="https://facebook.com/dinethjanith" target="_blank">
+            <FaFacebook />
+          </a>
         </motion.div>
         <motion.div
           whileHover={{ y: -10 }}
           transition={{ type: "spring", stiffness: 100 }}
         >
-          <FaHashnode />
+           <a href="https://hashnode.com/@dinethjanitha" target="_blank">
+            <FaHashnode />
+          </a>
         </motion.div>
       </div>
 

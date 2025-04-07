@@ -4,27 +4,19 @@ import { motion } from "framer-motion";
 const ProjectList = () => {
   const projectList = [
     {
-      title: "Online Vehical Reservation app",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum voluptatem sed earum vel labore atque omnis ad quo?",
-      badges: ["Next Js", "Full Stack", "MongoDB"],
-      link: "#",
-    },
-
-    {
       title: "Mega City Cab Front End",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum voluptatem sed earum vel labore atque omnis ad quo?",
       badges: ["Next Js", "Full Stack", "MongoDB"],
-      link: "#",
+      link: "https://github.com/dinethjanitha/mega-city-cab",
     },
 
     {
       title: "Mega City Cab Back End",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum voluptatem sed earum vel labore atque omnis ad quo?",
-      badges: ["Next Js", "Full Stack", "MongoDB"],
-      link: "#",
+      badges: ["Springboot", "MongoDB", "JWT"],
+      link: "https://github.com/dinethjanitha/mega-city-cab-backend",
     },
 
 
@@ -32,54 +24,61 @@ const ProjectList = () => {
       title: "Real Time Chat App",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum voluptatem sed earum vel labore atque omnis ad quo?",
-      badges: ["Next Js", "Full Stack", "MongoDB"],
-      link: "#",
+      badges: ["Socket.io", "Node.js",],
+      link: "https://github.com/dinethjanitha/Real-time-chart-app",
     },
 
     {
       title: "Crypto Dex",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum voluptatem sed earum vel labore atque omnis ad quo?",
-      badges: ["Next Js", "Full Stack", "MongoDB"],
-      link: "#",
+      badges: ["Node.js", "CLI"],
+      link: "https://github.com/dinethjanitha/cryptodex",
     },
 
     {
       title: "FitZone Front End",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum voluptatem sed earum vel labore atque omnis ad quo?",
-      badges: ["Next Js", "Full Stack", "MongoDB"],
-      link: "#",
+      badges: ["React Js", "Full Stack"],
+      link: "https://github.com/dinethjanitha/fitzone",
     },
 
     {
       title: "FitZone Back End",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum voluptatem sed earum vel labore atque omnis ad quo?",
-      badges: ["Next Js", "Full Stack", "MongoDB"],
-      link: "#",
+      badges: ["Node.js", "Full Stack", "MongoDB"],
+      link: "https://github.com/dinethjanitha/fitzone-back",
     },
 
+    {
+      title: "TechFix Front End",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum voluptatem sed earum vel labore atque omnis ad quo?",
+      badges: [".NET", "C#"],
+      link: "https://github.com/dinethjanitha/Techfix",
+    },
     {
       title: "TechFix Back End",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum voluptatem sed earum vel labore atque omnis ad quo?",
-      badges: ["ASP.NET", "SQL"],
-      link: "#",
+      badges: ["ASP.NET", "SQLServer"],
+      link: "https://github.com/dinethjanitha/Techfix-APIs",
     },
     {
       title: "Dogs Nutrition App",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum voluptatem sed earum vel labore atque omnis ad quo?",
-      badges: ["ASP.NET", "SQL"],
-      link: "#",
+      badges: ["Android Studio", "Java"],
+      link: "https://github.com/dinethjanitha/Dogs-Nutrition-App",
     },
     {
       title: "Employee Management System",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum voluptatem sed earum vel labore atque omnis ad quo?",
       badges: ["EJS", "NodeJS"],
-      link: "#",
+      link: "https://github.com/dinethjanitha/Employee-Management-System-using-EJS-CRUD",
     },
     {
       title: "Employee Management System",
@@ -92,16 +91,16 @@ const ProjectList = () => {
       title: "Gallary Cafe",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum voluptatem sed earum vel labore atque omnis ad quo?",
-      badges: ["EJS", "NodeJS"],
-      link: "#",
+      badges: ["PHP", "MySQL" , "BootStrap"],
+      link: "https://github.com/dinethjanitha/Online-Reservation-Management-System-for-Gallery-Cafe",
     },
 
     {
       title: "Hospital MS",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum voluptatem sed earum vel labore atque omnis ad quo?",
-      badges: ["EJS", "NodeJS"],
-      link: "#",
+        badges: ["PHP", "MySQL" , "BootStrap"],
+      link: "https://github.com/dinethjanitha/Hospital-MS",
     },
 
 

@@ -1,28 +1,24 @@
 import React from 'react'
-
-const ShineEffect = () => {
+interface Prop{
+  top : number,
+  left : number
+}
+const ShineEffect = ({top , left} : Prop) => {
     return (
-        <div
-          style={{
-            position: "relative",
-            width: "100vw",
-            height: "100vh",
-            background: "rgba(25, 6, 240, 1)", // Base background color
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            overflow: "hidden",
-          }}
+        <div className=' z-10' style={{
+          overflow:"hidden"
+        }}
         >
           {/* Mid-Screen Shine Effect */}
           <div
             style={{
               position: "absolute",
-              width: "60vw", // Adjust width for the shine effect
-              height: "60vh",
+              overflow : "clip",
+              width: "600px", // Adjust width for the shine effect
+              height: "600px",
               background: "radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(25, 6, 240, 0) 50%)",
-              top: "50%",
-              left: "50%",
+              top: `${top}%`,
+              left: `${left}%`,
               transform: "translate(-50%, -50%)",
               filter: "blur(80px)", // Soft shine
               pointerEvents: "none",
@@ -30,10 +26,6 @@ const ShineEffect = () => {
               animation: "subtleShine 3s infinite alternate ease-in-out",
             }}
           />
-    
-          <h1 style={{ color: "white", fontSize: "2rem", fontWeight: "bold", zIndex: 1 }}>
-            Your Content Here ✨
-          </h1>
     
           {/* Inline Keyframes */}
           <style>
