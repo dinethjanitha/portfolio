@@ -28,10 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className=" relative" style={{
-        background:
-          "rgba(25,6,240,1)",
-      }}>
+        <main className=" relative" >
         <div className="py-1 bg-amber-100 text-center text-black">
           This site still under the development!
         </div>
