@@ -8,7 +8,7 @@ import wavinghand from "./../../../public/images/waving-hand.1da6fc7a.gif";
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import { FaHashnode } from "react-icons/fa6";
 import "./timeline.module.css";
-import ShineEffect from "./ShineEffect";
+// import ShineEffect from "./ShineEffect";
 import BackGroundEffect from "./BackGroundEffect";
 // import myCv from "./../../../public/cv/myCv.pdf"
 
@@ -25,7 +25,7 @@ const Hero = () => {
       {/* <ShineEffect top={0} left={10} /> */}
       {/* <ShineEffect top={20} left={20} /> */}
       {/* <ShineEffect top={50} left={22} /> */}
-      <ShineEffect top={90} left={50} />
+      {/* <ShineEffect top={90} left={50} /> */}
       {/* <ShineEffect top={85} left={5} /> */}
       <div className=" grid sm:grid-cols-1  md:grid-cols-10 md:mx-15 ">
         <motion.div
