@@ -9,13 +9,8 @@ import { LuDna } from "react-icons/lu";
 const AboutMe = () => {
   return (
     <div
-      className=" h-screen p-5"
-      style={{
-        background : "#1b06f0"
-
-      }}
+      className=" relative h-screen p-5 z-10"
     >
-      {/* <ShineNEffect/> */}
       <div className=" lg:w-[1200px] overflow-clip mx-auto">
         <div className="my-4">
           <h1 className=" text-3xl font-bold mt-5 flex gap-2">
@@ -25,7 +20,7 @@ const AboutMe = () => {
           <div className="w-20 bg-amber-300 h-2 "></div>
         </div>
 
-        <div className=" m-3">
+        <div className="">
           <h2 className="">
             <span className=" text-4xl font-bold mr-2 ">I</span>am currently
             undergraduage Bsc(Hons) Software Engineering student at cardiff
@@ -35,17 +30,17 @@ const AboutMe = () => {
           <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-10  mt-5">
             <div>
               <h2 className=" text-2xl font-bold text-[#F5D7E6] flex flex-none gap-3"><IoLanguageSharp />Languages</h2>
-              <div className="w-12 py-2 bg-amber-300"></div>
+              <div className="w-12 h-2 p-1 bg-amber-300"></div>
               <div className="ml-5">
-                <h2 className="text-[#08f53c]">English</h2>
-                <h2 className=" text-[#08f53c]">Sinhala</h2>
+                <li className="text-[#f5f5f5]">English</li>
+                <li className=" text-[#f5e612]"><span className="text-[#f5f5f5]">Sinhala</span></li>
               </div>
             </div>
 
             <div>
               <h2 className=" text-2xl font-bold text-[#F5D7E6] grow flex gap-3"><GiWorld />Nationaly</h2>
               <div className="ml-5">
-                <h2 className="ml-7 text-[#08f53c]">Sinhalese</h2>
+                <li className="ml-7 text-[#08f53c]">Sinhalese</li>
               </div>
             </div>
 

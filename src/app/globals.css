@@ -41,6 +41,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  background-color: rgb(38, 38, 38);
 }
 
 @theme inline {
