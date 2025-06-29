@@ -22,12 +22,7 @@ const Resume = () => {
 
   return (
     <div
-      className=" h-screen"
-      style={{
-        background:
-          "linear-gradient(0deg, rgba(25,6,240,1) 2%, rgba(25,20,71,1) 50%, rgba(13,9,1,1) 79%)",
-      }}
-    >
+      className=" h-screen relative" >
       <div className=" lg:w-[1200px] lg:mx-auto p-2">
         <h1 className=" text-5xl text-center pt-6">My Resume</h1>
 
