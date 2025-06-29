@@ -16,7 +16,7 @@ const Hero = () => {
   const [hoverYValue, setHoverYValue] = useState(0);
 
   return (
-    <div className="p-5 relative" >
+    <div className="p-5  w-full" >
       <BackGroundEffect />
 
       {/* <ShineEffect top={50} left={60} /> */}

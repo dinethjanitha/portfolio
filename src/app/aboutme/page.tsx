@@ -2,20 +2,17 @@
 import React from "react";
 import Hero from "../component/Hero";
 import AboutMe from "../component/AboutMe";
+import { motion } from "framer-motion";
 
 const page = () => {
   return (
-    <div className="">
-      <div style={
-      {
-        background:
-        "linear-gradient(0deg, rgba(25,6,240,1) 2%, rgba(25,20,71,1) 50%, rgba(13,9,1,1) 79%)",
-      }
-    } >
+    <div className=" relative z-10 flex flex-col">
       <Hero/>
-        
-      </div>
-      <AboutMe/>
+        <motion.div
+        className=" "
+               >
+            <AboutMe/>
+        </motion.div>
     </div>
   );
 };
