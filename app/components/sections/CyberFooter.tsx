@@ -22,7 +22,7 @@ export default function CyberFooter({ progress }: CyberFooterProps) {
           <div className="w-1 h-4 bg-cyan-500/30"></div>
           <div className="w-1 h-4 bg-cyan-500/10"></div>
         </div>
-        <span>SYSTEM_READY</span>
+        <span className='mr-1'>SYSTEM_READY </span>
       </div>
 
       <div className="flex items-center gap-4 flex-1 md:w-1/3 justify-end md:justify-center ml-4 md:ml-0">
