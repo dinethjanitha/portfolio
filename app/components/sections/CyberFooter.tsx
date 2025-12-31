@@ -33,7 +33,7 @@ export default function CyberFooter({ progress }: CyberFooterProps) {
             style={{ width: `${scrollPercent}%` }}
           />
         </div>
-        <span className="w-8 md:w-12 text-right">{scrollPercent}%</span>
+        <span className="w-8 md:w-12 text-right mr-1">{scrollPercent}%</span>
       </div>
 
       <div className="hidden md:flex items-center gap-4">
